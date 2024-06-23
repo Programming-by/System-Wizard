@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace System_Wizard
 {
@@ -65,6 +66,16 @@ namespace System_Wizard
         internal const int EWX_FORCE = 0x00000004;
         internal const int EWX_POWEROFF = 0x00000008;
         internal const int EWX_FORCEIFHUNG = 0x00000010;
+        //Message Box
+        //-------------------------------------------------------
+
+        [DllImport("user32.dll", CharSet = CharSet.Unicode, SetLastError = true)]
+
+        public static extern int MessageBox(IntPtr hWnd , String text , String Caption, uint type);
+
+        internal const uint MB_ICONINFORMATION = 0x00000040;
+        internal const uint MB_ICONSTOP = 0x00000010;
+
         //-------------------------------------------------------
 
 
@@ -77,9 +88,13 @@ namespace System_Wizard
                     if (Wallpaper != "")
                     {
                     SetWallpaper(Wallpaper);
-                    MessageBox.Show("Desktop Wallpaper has been Changed");
+                    MessageBox(IntPtr.Zero,"Desktop Wallpaper has been Changed" , "Changed" , MB_ICONINFORMATION);
+
                     } else
-                    MessageBox.Show("Desktop Wallpaper has not been Changed");
+                    {
+                    MessageBox(IntPtr.Zero, "Desktop Wallpaper has not been Changed", "Not Changed", MB_ICONSTOP);
+                    }
+
                     break;
 
                 case "Shut Down":
