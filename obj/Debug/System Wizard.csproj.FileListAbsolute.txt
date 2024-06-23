@@ -1,0 +1,10 @@
+C:\Users\User\Source\Repos\System Wizard\bin\Debug\System Wizard.exe.config
+C:\Users\User\Source\Repos\System Wizard\bin\Debug\System Wizard.exe
+C:\Users\User\Source\Repos\System Wizard\bin\Debug\System Wizard.pdb
+C:\Users\User\Source\Repos\System Wizard\obj\Debug\System Wizard.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\System Wizard\obj\Debug\System_Wizard.frmMain.resources
+C:\Users\User\Source\Repos\System Wizard\obj\Debug\System_Wizard.Properties.Resources.resources
+C:\Users\User\Source\Repos\System Wizard\obj\Debug\System Wizard.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\System Wizard\obj\Debug\System Wizard.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\System Wizard\obj\Debug\System Wizard.exe
+C:\Users\User\Source\Repos\System Wizard\obj\Debug\System Wizard.pdb
